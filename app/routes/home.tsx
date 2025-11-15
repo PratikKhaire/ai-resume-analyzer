@@ -1,6 +1,5 @@
 import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/home";
-import { callbackify } from "util";
 import ResumeCard from "~/components/ResumeCard";
 
 import { resumes } from "../../constants/index"; // <-- Update import path
