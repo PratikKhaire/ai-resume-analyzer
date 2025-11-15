@@ -1,87 +1,96 @@
-# Welcome to React Router!
+# AI Resume Analyzer 📄✨
 
-A modern, production-ready template for building full-stack React applications using React Router.
+An intelligent resume analysis tool powered by AI that provides comprehensive feedback on your resume's ATS compatibility, tone, content, structure, and skills alignment.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚀 Quick Start
 
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
+Get started in seconds:
 
 ```bash
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Open [http://localhost:5173](http://localhost:5173) in your browser!
 
-## Building for Production
+📖 **New to this project?** Check out:
+- [QUICK_START.md](./QUICK_START.md) - Get running in 3 steps
+- [SETUP.md](./SETUP.md) - Complete documentation and guides
 
-Create a production build:
+## ✨ Features
+
+- 🤖 **AI-Powered Analysis** - Get intelligent feedback on your resume
+- 📊 **Multi-Criteria Scoring** - ATS, tone, content, structure, and skills
+- 🔐 **Secure Authentication** - Powered by Puter.js
+- 🚀 **Server-Side Rendering** - Fast initial page loads
+- ⚡️ **Hot Module Replacement** - Instant updates during development
+- 📦 **Optimized Bundling** - Production-ready builds
+- 🔒 **TypeScript** - Type-safe development
+- 🎉 **TailwindCSS** - Modern, responsive styling
+
+## 🛠️ Tech Stack
+
+- **React 19** with **React Router v7** - Modern full-stack framework
+- **TypeScript** - Type-safe development
+- **TailwindCSS v4** - Utility-first styling
+- **Vite 6** - Next-generation build tool
+- **Zustand** - Lightweight state management
+- **Puter.js** - Authentication system
+- **pdfjs-dist** - PDF processing
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server at http://localhost:5173 |
+| `npm run build` | Create optimized production build |
+| `npm run start` | Start production server at http://localhost:3000 |
+| `npm run typecheck` | Run TypeScript type checking |
+
+## 🐳 Docker Deployment
+
+Build and run with Docker:
 
 ```bash
-npm run build
+docker build -t ai-resume-analyzer .
+docker run -p 3000:3000 ai-resume-analyzer
 ```
 
-## Deployment
+Visit [http://localhost:3000](http://localhost:3000)
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## 📁 Project Structure
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+ai-resume-analyzer/
+├── app/                  # Application source code
+│   ├── routes/          # Page routes (auth, home)
+│   ├── components/      # React components
+│   └── lib/            # Utilities
+├── constants/           # App constants and data
+├── types/              # TypeScript definitions
+├── public/             # Static assets
+└── build/              # Production build (generated)
 ```
 
-## Styling
+## 🤝 Contributing
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run `npm run typecheck` to verify
+5. Submit a pull request
+
+## 📚 Documentation
+
+- [QUICK_START.md](./QUICK_START.md) - Get running in 3 steps
+- [SETUP.md](./SETUP.md) - Complete setup guide with troubleshooting
+- [React Router docs](https://reactrouter.com/)
+
+## 📝 System Requirements
+
+- Node.js v20.x or higher
+- npm v10.x or higher
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router and AI
